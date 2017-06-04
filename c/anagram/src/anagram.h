@@ -6,6 +6,7 @@
 #include <string.h>
 #include <sybdb.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 struct Vector {
    char (*vec)[MAX_STR_LEN];
