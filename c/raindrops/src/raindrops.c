@@ -91,9 +91,10 @@ char *convert(char *buffer, int size, int fact) {
             }
             default: {
                 if (strlen(buffer) == 0 && i == factors.size - 1) {
-                    char* src = malloc(5);
+                    char* src = malloc(sizeof(fact));
                     tostring(factors.vec[i], src, 10);
                     strcpy(buffer, src);
+                    free(src);
                 }
                 break;
             }
